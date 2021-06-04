@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+
+}
+
+.mat {
+  &-form-field{
+    font-size: 14px;
+    width: 100%;
+  }
+  &-paginator{
+    margin-bottom: 25px;
+  }
+  &-input{
+    color: white;
+  }
+}
+
+td, th {
+  width: 25%;
+}
+
+.filter{
+  background: white;
+  border-left: 10px solid #00A1E1;
+  width: 40%;
+}

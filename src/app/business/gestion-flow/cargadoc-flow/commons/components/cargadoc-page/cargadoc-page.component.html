@@ -1,0 +1,172 @@
+<div class="container-fluid contenido pb-3">
+    <div class="row">
+        <h1 class="mb-3">Cargar Documentos</h1>
+    </div>
+    <div class="row mb-5">
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6" align="center">
+            <div class="row">
+                <div class="col-lg-6">
+                    <button type="button" class="with-80 btn btn-cli-primary align-items-center d-flex justify-content-center">
+                        <span>GUARDAR</span> <span class="m-1"><mat-icon>add</mat-icon></span>
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <button type="button" class="with-80 btn btn-cli-danger align-items-center d-flex justify-content-center">
+                        <span>CANCELAR</span> <span class="m-1"><mat-icon>file_copy</mat-icon></span>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="form__content">
+        <form>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content_col-1">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Fecha de admisión</mat-label>
+                                    <input matInput [matDatepicker]="picker" class="form-control">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Encuentro</mat-label>
+                                    <input matInput placeholder="" class="form-control">
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Historia Clínica</mat-label>
+                                    <input matInput placeholder="" class="form-control">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Nombres</mat-label>
+                                    <input matInput placeholder="" class="form-control">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Apellido Paternos</mat-label>
+                                    <input matInput placeholder="" class="form-control">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>Apellido Materno</mat-label>
+                                    <input matInput placeholder="" class="form-control">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <mat-form-field appearance="fill" class="example-full-width">
+                                    <mat-label>Tipo de Documento</mat-label>
+                                    <mat-select disableRipple>
+                                      <mat-option value="dni">DNI</mat-option>
+                                      <mat-option value="carnet extran">Carnet Extran.</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <mat-form-field class="example-full-width">
+                                    <mat-label>N° Documento</mat-label>
+                                    <input matInput placeholder="" class="form-control">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content_col-2">
+                        <div class="content__header">
+                            <div class="row row-border-bottom align-items-center">
+                                <div class="col-lg-3" align="center">
+                                    <strong>Servicio</strong>
+                                </div>
+                                <div class="col-lg-3" align="center">
+                                    <strong>Beneficio</strong>
+                                </div>
+                                <div class="col-lg-3" align="center">
+                                    <strong>Tipo de Documento</strong>
+                                </div>
+                                <div class="col-lg-3" align="center">
+                                    <strong>Opción</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__body">
+                            <div class="row pt-3 row-border-bottom align-items-center">
+                                <div class="col-lg-3" align="center">
+                                    <mat-form-field appearance="fill" class="example-full-width pb-0">
+                                        <mat-label>Elegir servicio</mat-label>
+                                        <mat-select disableRipple>
+                                          <mat-option value="Laboratorio">Laboratorio</mat-option>
+                                          <mat-option value="Emergencia">Emergencia</mat-option>
+                                          <mat-option value="Hospitalización">Hospitalización</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-lg-3" align="center">
+                                    <mat-form-field appearance="fill" class="example-full-width pb-0">
+                                        <mat-label>Elegir Beneficio</mat-label>
+                                        <mat-select disableRipple>
+                                          <mat-option value="Consulta Abulatoria">Consulta Abulatoria</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-lg-3" align="center">
+                                    <mat-form-field appearance="fill" class="example-full-width pb-0">
+                                        <mat-label>Elegir Documento</mat-label>
+                                        <mat-select disableRipple>
+                                          <mat-option value="Pase Emergencia">Pase Emergencia</mat-option>
+
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-lg-3" align="center">
+                                    <div class="row">
+                                        <div class=col-lg-6>
+                                            <a class="icon-add-file" (click)="openDialog()">
+                                            <mat-icon class="icon">archive</mat-icon>
+                                            </a>
+                                        </div>
+                                        <div class=col-lg-6>
+                                            <a class="icon-remove-file">
+                                            <mat-icon class="icon">restore_from_trash</mat-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__foot">
+                            <div class="row p-3">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <button type="button" class="btn align-items-center button__add-file d-flex justify-content-center">
+                                        <span>AGREGAR CAMPO</span> <mat-icon>add_circle</mat-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+  </div>
+  <app-upload-modal></app-upload-modal>
+
+
+
+       

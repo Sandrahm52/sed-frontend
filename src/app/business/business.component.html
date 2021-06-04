@@ -1,0 +1,24 @@
+<!-- CABECERA -->
+<app-header></app-header>
+<!-- END CABECERA -->
+
+<!-- CONTENT -->
+<div class="business">
+    <div class="space"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- BREADCRUMBS -->
+                <app-breadcrumbs></app-breadcrumbs>
+                <!--<app-breadcrumbs [link]="breadcrumb" (bread)="to($event)"></app-breadcrumbs>-->
+                <!-- END BREADCRUMBS -->
+
+                <!-- RENDERED -->
+                <router-outlet></router-outlet>
+                <!-- END RENDERED -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CONTENT -->
+

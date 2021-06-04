@@ -1,0 +1,82 @@
+.content__dialog{
+    position: relative !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    #close-icon{
+        display: inline-block;
+        position: absolute;
+        right: -5px;
+        top: -10px;
+    }
+}
+
+.mat-dialog-container{
+    padding-top: 2rem;
+}
+
+.mat-dialog-content{
+    text-align: center;
+    font-size: 18px;
+    h3.dialog--title{
+        font-size: 25px;
+    }
+
+    .big-letter{
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.mat-dialog-actions{
+    justify-content: center;
+    a.btn--succes{
+        background-color: #039FD7;
+        color: #ffffff;
+    }
+}
+
+
+.uploadfilecontainer {
+    background-image: url("../../../../../assets/upload-image.PNG");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    height: 200px;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px dashed #1C8ADB;
+    border-radius: 10px;
+}
+
+.uploadfilecontainer:hover {
+    cursor: pointer;
+    background-color: #9ecbec !important;
+    opacity: 0.8;
+}
+
+.files-list {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+    background: #ffffff;
+    border: 1px dashed;
+    border-radius: 12px;
+    padding: 5px;
+    color: #1c8adb;
+}
+
+.files-list .delete-file {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.files-list .delete-file img {
+    width: 30px;
+}
+
+.delete-file{
+    color: #C52C2C;
+}

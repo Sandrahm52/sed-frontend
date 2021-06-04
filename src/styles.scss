@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+html, body { height: 100%; }
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1{
+    color:white;
+    font-size: 36px;
+    border-bottom: 1px solid white;
+    width:50%;
+    
+}
+
+.contenido{
+    background: rgba(0, 50,160,.4);
+    border-radius: 10px;
+}
+
+
+.login{
+    form{
+        width: 80%;
+        margin: auto;
+        .mat-form-field {
+            width: 100%;
+            &-flex{
+                align-items: flex-end!important;
+                color: rgba(0,0,0,.54);
+            }
+        }
+    }
+}
+
+.btn{
+    font-size:14px;
+    &:hover{
+        text-decoration: underline;
+        color:white;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .mat-icon{
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+        margin-left: 8px;
+    }
+
+    &-cli-primary{
+        background: #2EAFE2;
+        color: #ffffff;
+        margin-left: 15px;
+        border: 1px solid #2EAFE2;
+    }
+
+    &-cli-success{
+        background: #249E55;
+        color: #ffffff;
+        margin-left: 15px;
+        border: 1px solid #249E55;
+
+    }
+
+    &-cli-danger{
+        background: #C52C2C;
+        color: #ffffff;
+        margin-left: 15px;
+        border: 1px solid #C52C2C;
+
+    }
+
+    &-cli-secondary{
+        background: #00AAAA;
+        color: #ffffff;
+        margin-left: 15px;
+        border: 1px solid #00AAAA;
+
+    }
+
+    &-cli-danger{
+        background: #F16565;
+        color: #ffffff;
+        margin-left: 15px;
+        border: 1px solid #F16565;
+    }
+}
+
+
+.with-80{
+    width: 80%;
+}
+
+.with-80{
+    width: 90%;
+}
+
+
+
+// .mat-focused .mat-form-field-label, .mat-input-element {
+//     /change color of label/
+//     color: white !important;
+// }
+
+// .mat-form-field-underline {
+//     /change color of underline/
+//     background-color: white !important;
+// } 
+
+// .mat-form-field-ripple {
+//     /change color of underline when focused/
+//     background-color: white !important;
+// }

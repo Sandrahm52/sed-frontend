@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: expedientedigital-web
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: expedientedigital-web
+  template:
+    metadata:
+      labels:
+        app: expedientedigital-web
+    spec:
+      containers:
+        - name: expedientedigitalweb
+          image: kowalski50/expedientedigital-web:develop
+          ports:
+            - containerPort: 80

@@ -1,0 +1,75 @@
+<div class="content__dialog">
+  <span id="close-icon" mat-dialog-close>
+      <mat-icon>close</mat-icon>
+  </span>
+  <div>
+    <p style="font-size: 20px;">Crear Rol</p>
+    
+    <div mat-dialog-content>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <mat-form-field class="example-full-width">
+              <mat-label>Nombre Rol</mat-label>
+              <!--<input type="text" (keydown.enter)="isCreate()" formControlName="numeroDocumento" matInput placeholder="Escribir nombre"-->
+          </mat-form-field>
+        </div>  
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          <mat-label>Estado:&nbsp;</mat-label>
+          <mat-radio-group aria-label="Select an option">
+              <mat-radio-button value="1">Activo</mat-radio-button>
+              <mat-radio-button value="0" [checked]='true'>Inactivo</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12">
+        <mat-form-field appearance="fill">
+          <mat-label>Descripción</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <mat-form-field appearance="fill">
+            <mat-label>Privilegios</mat-label>
+            <mat-select>
+              <!--<mat-option *ngFor="let document of documents" [value]="document.value">
+                {{document.viewValue}}
+              </mat-option>-->
+            </mat-select>
+        </mat-form-field>
+    </div>
+      
+      
+    </div>
+      
+
+
+
+
+
+
+
+    </div>
+
+
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <br>
+  
+  <button mat-raised-button  color="warn" mat-dialog-close>CANCELAR</button>&nbsp;&nbsp;
+  <button class="btn-guardar" mat-raised-button >GUARDAR ROL</button>
+

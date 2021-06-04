@@ -1,0 +1,60 @@
+.form__content{
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+
+    .example-full-width{
+        width: 100%;
+    }
+}
+
+.content_col-1{
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+.content_col-2{
+    background: #F2F1F1;
+    color: #a4a4a4;
+    padding: 1rem;
+    border-radius: 5px;
+
+    .row-border-bottom{
+        border-bottom: 1px solid #c9c9c9;
+        padding-bottom: 8px;
+    }
+
+    .button__add-file{
+        background-color: #aaaaaa;
+        color:#ffffff;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    a.icon-add-file, a.icon-remove-file{
+        display: inline-block;
+    }
+
+    .icon-add-file .icon{
+        color: #218ecb;
+        font-size: 2rem;
+    }
+
+    .icon-remove-file .icon{
+        color: #D45758;
+        font-size: 2rem;
+    }
+
+}
+
+.btn-rol{
+    background-color:#F16565;
+    color: #fff; 
+  }
+  
+.btn-report{
+    background-color:#2EAFE2;
+    color: #fff;
+   
+}
+

@@ -1,0 +1,52 @@
+table {
+    width: 100%;
+  }
+  
+  .mat {
+    &-form-field{
+      font-size: 14px;
+      width: 100%;
+    }
+    &-paginator{
+      margin-bottom: 25px;
+    }
+    &-input{
+      color: white;
+    }
+  }
+  
+  .filter{
+    background: white;
+    border-left: 10px solid #00A1E1;
+  }
+  
+  .text-right{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .estado{
+    button{
+      cursor:initial ;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-radius: 10px;
+          color:white;
+          text-transform: uppercase;
+          font-size: 12px;
+          border:0px;
+          display: flex;
+          &.activo{
+            background: #249E55;
+          }
+          &.inactivo{
+            background: #C52C2C;
+          }
+          .mat-icon{
+            margin-left: 5px;
+            font-size: 18px;
+            width: 18px;
+            height: 18px;
+          }
+    }
+  }

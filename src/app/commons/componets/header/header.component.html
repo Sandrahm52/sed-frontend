@@ -1,0 +1,28 @@
+<mat-toolbar>
+    <a class="navbar-brand" routerLink="/business-flow">
+        <img src="../assets/logo.png" width="160" height="50">
+      </a>
+
+      <button mat-button routerLink="/business-flow/home">Inicio</button>
+      <button mat-button [matMenuTriggerFor]="menu">Seguridad</button>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/business-flow/roles">Roles</button>
+        <button mat-menu-item routerLink="/business-flow/users">Usuarios</button>
+        </mat-menu>
+
+      <button mat-button [matMenuTriggerFor]="menu2">Gestión Doc. Digitales</button>
+        <mat-menu #menu2="matMenu">
+        <button mat-menu-item routerLink="/business-flow/documentos/expediente">Generar Exp. Digital</button>
+        <button mat-menu-item routerLink="/business-flow/documentos/carga">Carga Documentos</button>
+        <button mat-menu-item routerLink="/business-flow/documentos/consulta">Consulta Documentos</button>
+      </mat-menu>
+
+      <span class="example-spacer"></span>
+      <div class="usuario">
+        <mat-icon >person</mat-icon>
+        <span>Martin Vera</span>
+      </div>
+      <button mat-icon-button routerLink="/login-flow" color="warn" >
+        <mat-icon>power_settings_new</mat-icon>
+      </button>
+  </mat-toolbar>

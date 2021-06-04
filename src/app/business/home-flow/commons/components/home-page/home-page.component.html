@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-12">
+        <h1>Bienvenidos</h1>
+    </div>
+</div>
+<div class="row">
+    <!-- LEFT -->
+    <div [ngClass]="box ? 'col-7' : 'col-5'">
+        <h2>al sistema<br>
+            <strong>Expediente digital</strong>
+        </h2>
+        <p class="operacion mt-5 pt-5" *ngIf="box">
+            ¿Qué operación desea realizar?
+        </p>
+    </div>
+    <!-- END LEFT -->
+
+    <!-- RIGHT -->
+    <div [ngClass]="box ? 'col-5' : 'col-7'">
+        <div *ngIf="box">
+        <app-boton-menu *ngFor="let box of hppr.listOption"
+        text="{{box.text}}"
+        icon="{{ box.icon }}"
+        clase="{{ box.clase }}"
+        path="{{ box.path }}"
+        (propagar)="asignar($event)"
+        ></app-boton-menu>
+        </div>
+
+
+        <div *ngIf="!box">
+            <p class="operacion my-4">
+                ¿Qué operación desea realizar?
+            </p>
+            <div class="contenido px-3 py-3">
+                <a class="back" (click)="back()">
+                    <mat-icon>chevron_left</mat-icon></a>
+                <app-boton-menu *ngFor="let box of hppr.listOptionGestion"
+                text="{{box.text}}"
+                icon="{{ box.icon }}"
+                path="{{ box.path }}"
+                ></app-boton-menu>
+            </div>
+        </div>
+    </div>
+    <!-- END RIGHT -->
+
+</div>

@@ -1,0 +1,38 @@
+.login{
+    background: url(../../../../../assets/back.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    &__card{
+        background-color: rgba($color: #fff, $alpha: .85);
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        &>div {
+            width: 80%;
+            margin: 0 auto;
+        }
+        img {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    a{
+        color: rgba(0,0,0,.54);
+        font-size: 14px;
+    }
+    .mat-success {
+        background-color: #2EAFE2;
+        width: 100%;
+        text-transform: uppercase;
+        color: #fff;
+        &[disabled]{
+            background-color: #aaa;
+        }
+    }
+    .isvalidate{
+        background: rgba($color: #f00, $alpha: .1);
+        color: #bd5454;
+        border: 1px solid red;
+        border-radius: 6px;
+    }
+
+}
